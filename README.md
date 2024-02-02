@@ -4,6 +4,10 @@
 
 Welcome to Git Fit, a fitness app for people of all skill levels to find new ways to exercise their body. This application provides a platform where users can search by muscle group for various exercises. 
 
+## Screenshot(s)
+
+Screenshot(s) of applciation to follow.
+
 
 ## User Story
 
