@@ -1,5 +1,6 @@
 // Placeholder for API keys
 const EXERCISE_DB_API_KEY = 'c9de07b8dcmsh74e6f8113b3952cp195de0jsn717baea31d4f';
+let apiRes;
 
 // Function to get exercises by body part from ExerciseDB API
 async function getExercisesByBodyPart(bodyPart) {
@@ -15,6 +16,8 @@ async function getExercisesByBodyPart(bodyPart) {
             throw new Error('Failed to fetch exercises by body part');
         }
         const data = await response.json();
+        apiRes = data;
+        console.log(apiRes)
         return data;
     } catch (error) {
         console.error(error);
