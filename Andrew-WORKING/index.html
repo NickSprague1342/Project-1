@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
     <title>Exercise By Body Part</title>
 </head>
 <body>
@@ -12,10 +11,10 @@
         <li><strong>ExerciseByBody</strong></li>
     </ul>
     <ul>
-        <li><a href="#arms">Arms</a></li>
-        <li><a href="#legs">Legs</a></li>
-        <li><a href="#back">Back</a></li>
-        <li><a href="#chest">Chest</a></li>
+        <li><a href="#" class="button" data-muscle="arms" id="arms-button">Arms</a></li>
+        <li><a href="#" class="button" data-muscle="legs" id="legs-button">Legs</a></li>
+        <li><a href="#" class="button" data-muscle="back" id="back-button">Back</a></li>
+        <li><a href="#" class="button" data-muscle="chest" id="chest-button">Chest</a></li>
         <li><a href="#account" role="button">Account</a></li>
     </ul>
 </nav>
@@ -34,12 +33,36 @@
             </figure>
             <h3>Featured Body Parts</h3>
             <p>Discover exercises tailored for different body parts.</p>
-            <div class="grid">
+        <div class="grid">
                 <a href="#arms" class="button">Arms Workouts</a>
                 <a href="#legs" class="button">Legs Workouts</a>
                 <a href="#chest" class="button">Chest Workouts</a>
                 <a href="#back" class="button">Back Workouts</a>
+        </div>
+            <!--BMI Calculator-->
+            <h3>Check you Body Mass Index</h3>
+            <div>
+                <label for="height-feet-input">Height (feet):</label>
+                <input type="number" id="height-feet-input" min="1">
+                <label for="height-inches-input">Height (inches):</label>
+                <input type="number" id="height-inches-input" min="0" max="11">
             </div>
+            <div>
+                <label for="weight-pounds-input">Weight (pounds):</label>
+                <input type="number" id="weight-pounds-input" min="1">
+            </div>
+            <div>
+                <label for="sex-select">Sex:</label>
+                <select id="sex-select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <button id="calculate-bmi-button">Calculate BMI</button>
+            <div id="bmi-results"></div>
+            <div id="bmi-category"></div>
+            
+
             <h3>Track Your Progress</h3>
             <p>Sign in to save your favorite exercises and track your progress over time.</p>
         </section>
@@ -61,8 +84,12 @@
         </article>
     </div>
 </section>
-
 <footer>
+    <div id="exercise-results"></div> 
+    <div id="arms-results" class="results-container"></div>
+    <div id="legs-results" class="results-container"></div>
+    <div id="back-results" class="results-container"></div>
+    <div id="chest-results" class="results-container"></div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="script.js"></script>
