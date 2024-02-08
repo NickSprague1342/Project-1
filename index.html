@@ -1,68 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>Exercise By Body Part</title>
 </head>
+
 <body>
-<nav class="container-fluid">
-    <ul>
-        <li><strong>ExerciseByBody</strong></li>
-    </ul>
-    <ul>
-        <li><a href="#arms">Arms</a></li>
-        <li><a href="#legs">Legs</a></li>
-        <li><a href="#back">Back</a></li>
-        <li><a href="#chest">Chest</a></li>
-        <li><a href="#account" role="button">Account</a></li>
-    </ul>
-</nav>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>ExerciseByBody</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#arms">Arms</a></li>
+            <li><a href="#legs">Legs</a></li>
+            <li><a href="#back">Back</a></li>
+            <li><a href="#chest">Chest</a></li>
+            <li><a href="#account" role="button">Account</a></li>
+        </ul>
+    </nav>
 
-<main class="container">
-    <div class="grid">
-        <section>
-            <hgroup>
-                <h2>Welcome to ExerciseByBody</h2>
-                <h3>Your personalized fitness companion</h3>
-            </hgroup>
-            <p>Select a body part to start your fitness journey.</p>
-            <figure>
-                <img src="https://source.unsplash.com/featured/?gym" alt="Exercise overview" />
-                <figcaption>Start with popular exercises</figcaption>
-            </figure>
-            <h3>Featured Body Parts</h3>
-            <p>Discover exercises tailored for different body parts.</p>
-            <div class="grid">
-                <a href="#arms" class="button">Arms Workouts</a>
-                <a href="#legs" class="button">Legs Workouts</a>
-                <a href="#chest" class="button">Chest Workouts</a>
-                <a href="#back" class="button">Back Workouts</a>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to ExerciseByBody</h2>
+                    <h3>Your personalized fitness companion</h3>
+                </hgroup>
+                <p>Select a body part to start your fitness journey.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/featured/?gym" alt="Exercise overview" />
+                    <figcaption>Start with popular exercises</figcaption>
+                </figure>
+                <h3>Featured Body Parts</h3>
+                <p>Discover exercises tailored for different body parts.</p>
+                <div class="grid">
+                    <a href="#arms" class="button">Arms Workouts</a>
+                    <a href="#legs" class="button">Legs Workouts</a>
+                    <a href="#chest" class="button">Chest Workouts</a>
+                    <a href="#back" class="button">Back Workouts</a>
+                </div>
+                <h3>Track Your Progress</h3>
+                <p>Sign in to save your favorite exercises and track your progress over time.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+        <!-- modal button -->
+        <button id="myBtn">Subscribe for More Content!</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Subscribe for More Content!</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="First Name">Name:</label>
+                    <input type="text" name="nameBox" id="First Name" , placeholder="First Name...">
+
+                    <label for="Email Address">Email: </label>
+                    <input type="text" name="emailBox" id="Email Address" , placeholder="Email...">
+
+                    <span class="submit"><button>Submit</button></span>
+
+                </div>
+                <div class="modal-footer">
+                    <h3>Exercise My Body</h3>
+                </div>
             </div>
-            <h3>Track Your Progress</h3>
-            <p>Sign in to save your favorite exercises and track your progress over time.</p>
-        </section>
-    </div>
-</main>
 
-<section aria-label="Subscribe example">
-    <div class="container">
-        <article>
-            <hgroup>
-                <h2>Stay Updated</h2>
-                <h3>Subscribe for the latest fitness tips</h3>
-            </hgroup>
-            <form class="grid">
-                <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required />
-                <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
-                <button type="submit" onclick="event.preventDefault()">Subscribe</button>
-            </form>
-        </article>
-    </div>
-</section>
+        </div>
 
-<footer>
+        <script>
+            //functionality of modal
+            var modal = document.getElementById("myModal");
+
+            var btn = document.getElementById("myBtn");
+
+            //'x' to close modal
+            var span = document.getElementsByClassName("close")[0];
+
+            var submit = document.getElementsByClassName('submit')[0];
+
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            submit.onclick = function () {
+                modal.style.display = 'none';
+            }
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+</body>
+
+</html>
+
 </footer>
 </body>
+
 </html>
