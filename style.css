@@ -1,4 +1,59 @@
-body {
-    background-image: url(https://mycourtsqa.in.gov/WebResource.axd?d=LDFrYvvA24WuhnQ6dYbhK7socT_mdIyyhnjkuobZ9lli5krHVkON65ROdx1kh6bnxnqpNU8heA_zJxSt_7-txt1rkmHJocLwX4rzeAkObrI9mpfGv6FiMgc0OIlLSXhtuqdBAGs4yjUs5PQhKSfpHye2uE7fYbeCpMJFo8zqwiImkl6eYH9Hp6mQRCo0YruQopuHoQ2&t=638053327334674500);
-    color: goldenrod;
-}
+*{
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .navbar {
+      background-color: #222!important;
+      border-bottom: 1px solid #444!important; 
+  }
+  
+  .navbar-brand{
+    color: white;
+  }
+  
+  .navbar-item{
+    color: #fff!important;
+  }
+  
+  a{
+    background-color: #222!important;
+    color:#fff!important;
+  }
+  
+  .navbar-item:hover{
+    background-color: #333!important; 
+  }
+  
+  .hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px; 
+  }
+  
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position:top;
+    display: block;
+  }
+  
+  .workout-options{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 80px;
+  }
+  
+  .workout-options, h2{
+    padding: 40px;
+    font-size: 48px;;
+  
+  }
+  
+  .button:hover{
+    background-color: #444!important;
+  }
