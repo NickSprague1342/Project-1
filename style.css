@@ -74,7 +74,38 @@
   font-size: 48px;
 }
 
-  }
+#exerciseList.exercises-container {
+  background-color: transparent;
+  
+}
+/* Exercises Grid Layout */
+.exercises-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  border: #000;
+  border: 1px transparent #e6e1e1;
+  background-color: #0a0909fc;
+  text-align: center;
+}
+
+.exercise-item {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #d2cfcf;
+  border: 1px solid #e6e1e1;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px #b24c4c;
+}
+
+.exercise-item img {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  height: auto;
+}
 
   /* The Modal (background) */
 .modal {
@@ -148,6 +179,7 @@
     color: white;
     text-align: center;
 }
+
 
 /* Add Animation */
 @-webkit-keyframes slideIn {

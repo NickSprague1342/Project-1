@@ -34,7 +34,7 @@ function shuffleArray(array) {
 }
 
 // Function to randomly select a subset of exercises
-function selectRandomExercises(exercises, count = 8) {
+function selectRandomExercises(exercises, count = 6) {
     shuffleArray(exercises); // Shuffle the array first
     return exercises.slice(0, count); // Then slice it to get the first 'count' elements
 }
