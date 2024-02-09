@@ -4,116 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-=======
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
->>>>>>> a4c344241a4b2c94762a783d8fb544ae45402b88
     <title>Exercise By Body Part</title>
 </head>
 
 <body>
-<<<<<<< HEAD
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <div class="navbar-item">
-        <h1 class="title is-size-3 has-text-white">ExerciseByBody</h1>
-      </div>
-      <div class="navbar-burger burger" data-target="navbarBasicExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="#arms">
-          Arms
-        </a>
-        <a class="navbar-item" href="#chest">
-          Chest
-        </a>
-        <a class="navbar-item" href="#back">
-          Back
-        </a>
-        <a class="navbar-item" href="#legs">
-          Legs
-        </a>
-        <a class="navbar-item" href="#about">
-          About
-        </a>
-      </div>
-    </div>
-  </nav>
- 
-  <section class="hero">
-    <h1 class="hero-text">Welcome to Exercise by Body</h1>
-    <img src="https://source.unsplash.com/featured/?gym" alt="Exercise overview" />
-  </section>
-  <section class="workout-options">
-    <h2>Choose an area to focus on:</h2>
-      <a href="#arms" class="button">Arms Workouts</a>
-      <a href="#legs" class="button">Legs Workouts</a>
-      <a href="#chest" class="button">Chest Workouts</a>
-      <a href="#back" class="button">Back Workouts</a>
-  </section>
-
-  <section aria-label="Subscribe example">
-    <div class="container">
-        <article>
-            <hgroup>
-                <h2>Stay Updated</h2>
-                <h3>Subscribe for the latest fitness tips</h3>
-            </hgroup>
-            <form>
-                <input class="input is-small" type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required />
-                <input class="input is-small" type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
-                <button class="" type="submit" onclick="event.preventDefault()">Subscribe</button>
-            </form>
-        </article>
-    </div>
-  </section>
-
-  <footer>
-  </footer>
-=======
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>ExerciseByBody</strong></li>
-        </ul>
-        <ul>
-            <li><a href="#arms">Arms</a></li>
-            <li><a href="#legs">Legs</a></li>
-            <li><a href="#back">Back</a></li>
-            <li><a href="#chest">Chest</a></li>
-            <li><a href="#account" role="button">Account</a></li>
-        </ul>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <div class="navbar-item">
+            <h1 class="title is-size-3 has-text-white">ExerciseByBody</h1>
+          </div>
+          <div class="navbar-burger burger" data-target="navbarBasicExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#arms">
+              Arms
+            </a>
+            <a class="navbar-item" href="#chest">
+              Chest
+            </a>
+            <a class="navbar-item" href="#back">
+              Back
+            </a>
+            <a class="navbar-item" href="#legs">
+              Legs
+            </a>
+            <a class="navbar-item" href="#about">
+              About
+            </a>
+          </div>
+        </div>
     </nav>
+    
+    <section class="hero">
+        <h1 class="hero-text">Welcome to Exercise by Body<br /> Your personalized fitness companion</h1> 
+        
+        <img src="https://source.unsplash.com/featured/?gym" alt="Exercise overview" />
+    </section>  
 
     <main class="container">
         <div class="grid">
             <section>
-                <hgroup>
-                    <h2>Welcome to ExerciseByBody</h2>
-                    <h3>Your personalized fitness companion</h3>
-                </hgroup>
-                <p>Select a body part to start your fitness journey.</p>
-                <figure>
-                    <img src="https://source.unsplash.com/featured/?gym" alt="Exercise overview" />
-                    <figcaption>Start with popular exercises</figcaption>
-                </figure>
-                <h3>Featured Body Parts</h3>
-                <p>Discover exercises tailored for different body parts.</p>
+                <div class="section-container">
+                    <h3 class="section-text">Featured Body Parts</h3>
+                    <p>Discover exercises tailored for different body parts.</p>
+                </div>
                 <div class="grid">
-                    <a href="#arms" class="button">Arms Workouts</a>
-                    <a href="#legs" class="button">Legs Workouts</a>
-                    <a href="#chest" class="button">Chest Workouts</a>
-                    <a href="#back" class="button">Back Workouts</a>
+                    <div class="button-container">
+                        <div data-href="#upper arms" class="button" role="button">Upper Arms Workouts</div>
+                        <div data-href="#lower arms" class="button" role="button">Lower Arms Workouts</div>
+                        <div data-href="#upper legs" class="button" role="button">Upper Legs Workouts</div>
+                        <div data-href="#lower legs" class="button" role="button">Lower Legs Workouts</div>
+                        <div data-href="#chest" class="button" role="button">Chest Workouts</div>
+                        <div data-href="#back" class="button" role="button">Back Workouts</div>
+                        <div data-href="#shoulders" class="button" role="button">Shoulders Workouts</div>
                 </div>
                 <h3>Track Your Progress</h3>
                 <p>Sign in to save your favorite exercises and track your progress over time.</p>
@@ -124,7 +78,7 @@
     <footer>
 
         <!-- modal button -->
-        <button id="myBtn">Subscribe for More Content!</button>
+        <button class="button" id="myBtn">Subscribe for More Content!</button>
 
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -187,7 +141,7 @@
 </html>
 
 </footer>
->>>>>>> a4c344241a4b2c94762a783d8fb544ae45402b88
+<script src="script.js"></script>
 </body>
 
 </html>
