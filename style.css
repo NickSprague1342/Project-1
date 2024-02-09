@@ -39,7 +39,7 @@
     width: 100%;
     height: 500px;
     object-fit: cover;
-    object-position:top;
+    object-position:center;
     display: block;
   }
   
@@ -99,7 +99,7 @@
   border-radius: 10px;
   box-shadow: 5px 5px #b24c4c;
 }
-
+/* Gif Images inside the grid */
 .exercise-item img {
   display: grid;
   justify-items: center;
