@@ -69,28 +69,33 @@
                         <div data-href="#back" class="button" role="button">Back Workouts</div>
                         <div data-href="#shoulders" class="button" role="button">Shoulders Workouts</div>
                 </div>
- <!--BMI Calculator-->
- <h3>Check you Body Mass Index</h3>
- <div>
-     <label for="height-feet-input">Height (feet):</label>
-     <input type="number" id="height-feet-input" min="1">
-     <label for="height-inches-input">Height (inches):</label>
-     <input type="number" id="height-inches-input" min="0" max="11">
- </div>
- <div>
-     <label for="weight-pounds-input">Weight (pounds):</label>
-     <input type="number" id="weight-pounds-input" min="1">
- </div>
- <div>
-     <label for="sex-select">Sex:</label>
-     <select id="sex-select">
-         <option value="male">Male</option>
-         <option value="female">Female</option>
-     </select>
- </div>
- <button id="calculate-bmi-button">Calculate BMI</button>
- <div id="bmi-results"></div>
- <div id="bmi-category"></div>
+ 
+<!-- BMI Calculator -->
+<div class="bmi-calculator">
+    <h3>Check Your Body Mass Index</h3>
+    <div>
+        <label for="height-feet-input">Height (feet):</label>
+        <input type="number" id="height-feet-input" min="1">
+        <label for="height-inches-input">Height (inches):</label>
+        <input type="number" id="height-inches-input" min="0" max="11">
+    </div>
+    <div>
+        <label for="weight-pounds-input">Weight (pounds):</label>
+        <input type="number" id="weight-pounds-input" min="1">
+    </div>
+    <div>
+        <label for="sex-select">Assigned Gender:</label>
+        <select id="sex-select">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <button id="calculate-bmi-button">Calculate My BMI</button>
+<div class="bmi-results-container">
+    <div id="bmi-results"></div>
+    <div id="bmi-category"></div>
+</div>
+ <!--End BMI Calculator-->
 
                 <h3>Track Your Progress</h3>
             <p>Sign in to save your favorite exercises and track your progress over time.</p>
@@ -162,6 +167,7 @@
                 }
             }
         </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script.js"></script>        
     </footer>
     </body>

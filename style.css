@@ -193,3 +193,64 @@
         opacity: 1
     }
 }
+
+/* BMI Calculator Styling */
+.bmi-calculator {
+  margin-top: 40px;
+}
+
+.bmi-calculator h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.bmi-calculator label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bmi-calculator input[type="number"],
+.bmi-calculator select {
+  width: calc(25% - 40px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bmi-calculator select {
+  margin-left: 0px;
+  margin-top: 5px;
+
+}
+
+.bmi-calculator button {
+  background-color: #333;
+  color: white;
+  padding: 10px 30px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; 
+  font-size: 15px; 
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.bmi-calculator button:hover {
+  background-color: #444;
+}
+
+.bmi-results-container {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  width: calc(25% - 40px);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.bmi-results {
+  font-size: 18px;
+}
