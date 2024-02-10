@@ -1,30 +1,30 @@
-*{
+* {
     font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  .navbar {
-      background-color: #222!important;
-      border-bottom: 1px solid #444!important; 
-  }
-  
-  .navbar-brand{
+}
+
+.navbar {
+    background-color: #222 !important;
+    border-bottom: 1px solid #444 !important;
+}
+
+.navbar-brand {
     color: white;
-  }
-  
-  .navbar-item{
-    color: #fff!important;
-  }
-  
-  a{
-    background-color: #222!important;
-    color:#fff!important;
-  }
-  
-  .navbar-item:hover{
-    background-color: #333!important; 
-  }
-  
-  .hero-text{
+}
+
+.navbar-item {
+    color: #fff !important;
+}
+
+a {
+    background-color: #222 !important;
+    color: #fff !important;
+}
+
+.navbar-item:hover {
+    background-color: #333 !important;
+}
+
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,81 +33,85 @@
     font-size: 48px;
     text-align: center;
     /*-webkit-text-stroke: 1px #222; */
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    object-position:center;
+    object-position: center;
     display: block;
-  }
-  
-  .workout-options{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    padding: 80px;
-  }
-  
-  .workout-options, h2{
-    padding: 40px;
-    font-size: 48px;;
-  
-  }
-
-  .button{
-    background-color: #333;
-    color: white;
-  }
-  
-  .button:hover{
-    background-color: #444!important;
-    color: white;
-  }
-
-.section-container{
-  margin-top: 80px;
 }
 
-.section-text{
-  font-size: 48px;
+.workout-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 80px;
+}
+
+.workout-options,
+h2 {
+    padding: 40px;
+    font-size: 48px;
+    ;
+
+}
+
+.button {
+    background-color: #333;
+    color: white;
+}
+
+.button:hover {
+    background-color: #444 !important;
+    color: white;
+}
+
+.section-container {
+    margin-top: 80px;
+}
+
+.section-text {
+    font-size: 48px;
 }
 
 #exerciseList.exercises-container {
-  background-color: transparent;
-  
+    background-color: transparent;
+
 }
+
 /* Exercises Grid Layout */
 .exercises-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  border: #000;
-  border: 1px transparent #e6e1e1;
-  background-color: #0a0909fc;
-  text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    border: #000;
+    border: 1px transparent #e6e1e1;
+    background-color: #0a0909fc;
+    text-align: center;
 }
 
 .exercise-item {
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #d2cfcf;
-  border: 1px solid #e6e1e1;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 5px 5px #b24c4c;
-}
-/* Gif Images inside the grid */
-.exercise-item img {
-  display: grid;
-  justify-items: center;
-  text-align: center;
-  height: auto;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #d2cfcf;
+    border: 1px solid #e6e1e1;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #b24c4c;
 }
 
-  /* The Modal (background) */
+/* Gif Images inside the grid */
+.exercise-item img {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    height: auto;
+}
+
+/* The Modal (background) */
 .modal {
     display: none;
     /* Hidden by default */
