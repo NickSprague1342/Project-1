@@ -15,58 +15,58 @@
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <div class="navbar-item">
-            <h1 class="title is-size-3 has-text-white">ExerciseByBody</h1>
-          </div>
-          <div class="navbar-burger burger" data-target="navbarBasicExample">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+            <div class="navbar-item">
+                <h1 class="title is-size-3 has-text-white">ExerciseByBody</h1>
+            </div>
+            <div class="navbar-burger burger" data-target="navbarBasicExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      
+
         <div id="navbarMenu" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="#upper-arms">
-              Upper Arms
-            </a>
-            <a class="navbar-item" href="#lower-arms">
-              Lower Arms
-            </a>
-            <a class="navbar-item" href="#chest">
-              Chest
-            </a>
-            <a class="navbar-item" href="#back">
-              Back
-            </a>
-            <a class="navbar-item" href="#upper-legs">
-              Upper Legs
-            </a>
-            <a class="navbar-item" href="#lower-legs">
-              Lower Legs
-            </a>
-            <a class="navbar-item" href="#shoulders">
-              Shoulders
-            </a>
-            <a class="navbar-item" href="#bmi">
-              BMI
-            </a>
-            <a class="navbar-item" href="#subscribe">
-              Subscribe
-            </a>
-            <a class="navbar-item" href="#about">
-              About
-            </a>
-          </div>
+            <div class="navbar-end">
+                <a class="navbar-item" href="#upper-arms">
+                    Upper Arms
+                </a>
+                <a class="navbar-item" href="#lower-arms">
+                    Lower Arms
+                </a>
+                <a class="navbar-item" href="#chest">
+                    Chest
+                </a>
+                <a class="navbar-item" href="#back">
+                    Back
+                </a>
+                <a class="navbar-item" href="#upper-legs">
+                    Upper Legs
+                </a>
+                <a class="navbar-item" href="#lower-legs">
+                    Lower Legs
+                </a>
+                <a class="navbar-item" href="#shoulders">
+                    Shoulders
+                </a>
+                <a class="navbar-item" href="#bmi">
+                    BMI
+                </a>
+                <a class="navbar-item" href="#subscribe">
+                    Subscribe
+                </a>
+                <a class="navbar-item" href="#about">
+                    About
+                </a>
+            </div>
         </div>
     </nav>
-    
+
     <section class="hero">
-        <h1 class="hero-text">Welcome to Exercise by Body<br /> Your personalized fitness companion</h1> 
-        
+        <h1 class="hero-text">Welcome to Exercise by Body<br /> Your personalized fitness companion</h1>
+
         <img src="https://source.unsplash.com/featured/?gym" alt="Exercise overview" />
-    </section>  
-<!--Exercise Buttons-->
+    </section>
+    <!--Exercise Buttons-->
     <main class="container">
         <div class="grid">
             <section>
@@ -83,40 +83,40 @@
                         <div data-href="#chest" class="button" role="button">Chest Workouts</div>
                         <div data-href="#back" class="button" role="button">Back Workouts</div>
                         <div data-href="#shoulders" class="button" role="button">Shoulders Workouts</div>
-                </div>
- <!--BMI Calculator-->
- <div class="container">
-    <bmi class="bmi-container">
-     <h3>Check you Body Mass Index</h3>
-     <label for="height-feet-input">Height (feet):</label>
-     <input type="number" id="height-feet-input" min="1">
-     <label for="height-inches-input">Height (inches):</label>
-     <input type="number" id="height-inches-input" min="0" max="11">
- </div>
- <div>
-     <label for="weight-pounds-input">Weight (pounds):</label>
-     <input type="number" id="weight-pounds-input" min="1">
- </div>
- <div>
-     <label for="sex-select">Sex:</label>
-     <select id="sex-select">
-         <option value="male">Male</option>
-         <option value="female">Female</option>
-     </select>
- </div>
- <button id="calculate-bmi-button">Calculate BMI</button>
- <div id="bmi-results"></div>
- <div id="bmi-category"></div>
+                    </div>
+                    <!--BMI Calculator-->
+                    <div class="container">
+                        <bmi class="bmi-container">
+                            <h3>Check you Body Mass Index</h3>
+                            <label for="height-feet-input">Height (feet):</label>
+                            <input type="number" id="height-feet-input" min="1">
+                            <label for="height-inches-input">Height (inches):</label>
+                            <input type="number" id="height-inches-input" min="0" max="11">
+                    </div>
+                    <div>
+                        <label for="weight-pounds-input">Weight (pounds):</label>
+                        <input type="number" id="weight-pounds-input" min="1">
+                    </div>
+                    <div>
+                        <label for="sex-select">Sex:</label>
+                        <select id="sex-select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <button id="calculate-bmi-button">Calculate BMI</button>
+                    <div id="bmi-results"></div>
+                    <div id="bmi-category"></div>
 
-                <h3>Track Your Progress</h3>
-            <p>Sign in to save your favorite exercises and track your progress over time.</p>
-        </section>
-    </div>
-    <div id="exerciseList" class="exercises-container">
-        <h3>Exercises</h3>
-        <!-- Fetched exercises will be displayed here -->
-    </div>
-</main>
+                    <h3>Track Your Progress</h3>
+                    <p>Sign in to save your favorite exercises and track your progress over time.</p>
+            </section>
+        </div>
+        <div id="exerciseList" class="exercises-container">
+            <h3>Exercises</h3>
+            <!-- Fetched exercises will be displayed here -->
+        </div>
+    </main>
 
     <footer>
 
@@ -178,7 +178,8 @@
                 }
             }
         </script>
-    <script src="script.js"></script>        
+        <script src="script.js"></script>
     </footer>
-    </body>
-    </html>
+</body>
+
+</html>
