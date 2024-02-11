@@ -191,6 +191,19 @@ h2 {
     text-align: center;
 }
 
+.footerBreak {
+    border-top: 2px solid #222;
+}
+
+.gMaps {
+    text-align: center;
+    font-size: 25px;
+}
+
+#here {
+    color: blue;
+    background-color: white;
+}
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
