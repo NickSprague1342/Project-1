@@ -53,12 +53,11 @@ img {
 .workout-options,
 h2 {
     padding: 40px;
-    font-size: 48px;
-    ;
-
-}
-
-.button {
+    font-size: 48px;;
+  
+  }
+/* Button Styles */
+  .button{
     background-color: #333;
     color: white;
 }
@@ -76,8 +75,21 @@ h2 {
     font-size: 48px;
 }
 
+.button-container{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
 #exerciseList.exercises-container {
+  display: grid;
     background-color: transparent;
+}
+
+.exercise-text{
+  font-size: 42px;
+  grid-column: 2;
+  text-align: center;
 
 }
 
