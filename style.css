@@ -24,73 +24,100 @@ a {
     background-color: #333 !important;
 }
 
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 48px;
+.header-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
     text-align: center;
+    color: white;
+}
+/* Header Text */
+.header-text {
+    display: grid;
+    justify-content: center;
+    color: #222;
+    font-size: 65px;
+    text-align: center;
+    font-family:'Bebas Neue', sans-serif;
     /*-webkit-text-stroke: 1px #222; */
 }
-
-img {
+/* Section Image Container*/
+.image-container {
+    display: block;
+    justify-content: center; 
+}
+/* Random Image on Page Refresh/Load - Unsplash */
+.image img {
     width: 100%;
-    height: 500px;
+    height: 1000px;
     object-fit: cover;
     object-position: center;
     display: block;
 }
-
+/* Workout Options Container */
 .workout-options {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 80px;
 }
-
+/* Workout Options Header */
 .workout-options,
 h2 {
     padding: 40px;
     font-size: 48px;;
-  
-  }
+}
+
 /* Button Styles */
   .button{
-    background-color: #333;
+    background-color: #444;
     color: white;
+    padding: auto;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+/* Unvisited link */
 .button:hover {
-    background-color: #444 !important;
-    color: white;
+    background-color: #aaa9a9; /* Hover background color */
 }
 
+/* Clicked (active) state color 
+.clicked {
+    background-color: #444;
+    color: white !important;   
+}  */
+
+/* Section Container */
 .section-container {
     margin-top: 80px;
 }
-
+/* Section Text */
 .section-text {
     font-size: 48px;
 }
-
+/* Button Container for Exercises */
 .button-container{
   display: flex;
   justify-content: space-evenly;
-  
 }
 
+/* Exercise Button Styles */
+.button-container button:hover {
+    background-color: lightgray;
+    /* Additional styles for hover effect */
+}
+/* Exercise List Container */
 #exerciseList.exercises-container {
   display: grid;
     background-color: transparent;
 }
-
+/* Exercise Instruction Text */
 .exercise-text{
   font-size: 42px;
   grid-column: 2;
   text-align: center;
-
 }
 
 /* Exercises Grid Layout */
@@ -103,7 +130,7 @@ h2 {
     background-color: #0a0909fc;
     text-align: center;
 }
-
+/* Exercise Card Styles */
 .exercise-item {
     padding: 20px;
     font-size: 20px;
@@ -113,6 +140,11 @@ h2 {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 10px 5px #b24c4c;
+}
+
+/* Exercise Card Text */
+.exercise-item p {
+    margin-top: 10px;
 }
 
 /* Gif Images inside the grid */
