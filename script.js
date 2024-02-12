@@ -16,7 +16,7 @@ async function getExercisesByBodyPart(bodyPart) {
             throw new Error('Failed to fetch exercises by body part');
         }
         const data = await response.json();
-        apiRes=data;
+        apiRes = data;
         console.log(apiRes)
         return data;
     } catch (error) {
@@ -34,7 +34,7 @@ function shuffleArray(array) {
 }
 
 // Function to randomly select a subset of exercises
-function selectRandomExercises(exercises, count = 8) {
+function selectRandomExercises(exercises, count = 6) {
     shuffleArray(exercises); // Shuffle the array first
     return exercises.slice(0, count); // Then slice it to get the first 'count' elements
 }
@@ -42,7 +42,7 @@ function selectRandomExercises(exercises, count = 8) {
 // Function to handle clicking on body part buttons and display exercises
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.button').forEach(button => {
-        button.addEventListener('click', function(event) {
+        button.addEventListener('click', function (event) {
             const bodyPart = this.getAttribute('data-href').substring(1);
             loadExercises(bodyPart);
         });
@@ -70,7 +70,7 @@ function displayExercises(exercises) {
         const nameElement = document.createElement('h4');
         nameElement.innerText = exercise.name;
         exerciseDiv.appendChild(nameElement);
-        
+
         if (exercise.gifUrl) {
             const img = document.createElement('img');
             img.src = exercise.gifUrl;
@@ -83,7 +83,7 @@ function displayExercises(exercises) {
             instructionElement.innerText = exercise.instructions;
             exerciseDiv.appendChild(instructionElement);
         }
-        
+
         container.appendChild(exerciseDiv);
     });
 }

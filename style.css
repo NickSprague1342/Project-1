@@ -1,30 +1,30 @@
-*{
+* {
     font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  .navbar {
-      background-color: #222!important;
-      border-bottom: 1px solid #444!important; 
-  }
-  
-  .navbar-brand{
+}
+
+.navbar {
+    background-color: #222 !important;
+    border-bottom: 1px solid #444 !important;
+}
+
+.navbar-brand {
     color: white;
-  }
-  
-  .navbar-item{
-    color: #fff!important;
-  }
-  
-  a{
-    background-color: #222!important;
-    color:#fff!important;
-  }
-  
-  .navbar-item:hover{
-    background-color: #333!important; 
-  }
-  
-  .hero-text{
+}
+
+.navbar-item {
+    color: #fff !important;
+}
+
+a {
+    background-color: #222 !important;
+    color: #fff !important;
+}
+
+.navbar-item:hover {
+    background-color: #333 !important;
+}
+
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,50 +33,98 @@
     font-size: 48px;
     text-align: center;
     /*-webkit-text-stroke: 1px #222; */
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    object-position:top;
+    object-position: center;
     display: block;
-  }
-  
-  .workout-options{
+}
+
+.workout-options {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding: 80px;
-  }
-  
-  .workout-options, h2{
+}
+
+.workout-options,
+h2 {
     padding: 40px;
     font-size: 48px;;
   
   }
-
+/* Button Styles */
   .button{
     background-color: #333;
     color: white;
-  }
-  
-  .button:hover{
-    background-color: #444!important;
+}
+
+.button:hover {
+    background-color: #444 !important;
     color: white;
-  }
-
-.section-container{
-  margin-top: 80px;
 }
 
-.section-text{
-  font-size: 48px;
+.section-container {
+    margin-top: 80px;
 }
 
-  }
+.section-text {
+    font-size: 48px;
+}
 
-  /* The Modal (background) */
+.button-container{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+#exerciseList.exercises-container {
+  display: grid;
+    background-color: transparent;
+}
+
+.exercise-text{
+  font-size: 42px;
+  grid-column: 2;
+  text-align: center;
+
+}
+
+/* Exercises Grid Layout */
+.exercises-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    border: #000;
+    border: 1px transparent #e6e1e1;
+    background-color: #0a0909fc;
+    text-align: center;
+}
+
+.exercise-item {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #d2cfcf;
+    border: 1px solid #e6e1e1;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 5px #b24c4c;
+}
+
+/* Gif Images inside the grid */
+.exercise-item img {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    height: auto;
+    border: 2px solid #201f1f;
+}
+
+/* The Modal (background) */
 .modal {
     display: none;
     /* Hidden by default */
@@ -132,21 +180,42 @@
 
 .modal-header {
     padding: 2px 16px;
-    background-color: rgb(49, 48, 48);
+    background-color: #222;
     color: white;
     text-align: center;
+}
+
+.topAndBottomModalHeader {
+    padding: 15px;
+    font-size: 40px;
+    background-color: #222;
 }
 
 .modal-body {
     padding: 20px 16px;
     text-align: center;
+    font-size: 20px;
 }
 
 .modal-footer {
-    padding: 2px 16px;
+    /* padding: 2px 16px; */
     background-color: rgb(49, 48, 48);
     color: white;
     text-align: center;
+}
+
+.footerBreak {
+    border-top: 2px solid #222;
+}
+
+.gMaps {
+    text-align: center;
+    font-size: 25px;
+}
+
+#here {
+    color: blue;
+    background-color: white;
 }
 
 /* Add Animation */
@@ -192,65 +261,4 @@
     to {
         opacity: 1
     }
-}
-
-/* BMI Calculator Styling */
-.bmi-calculator {
-  margin-top: 40px;
-}
-
-.bmi-calculator h3 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.bmi-calculator label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.bmi-calculator input[type="number"],
-.bmi-calculator select {
-  width: calc(25% - 40px);
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.bmi-calculator select {
-  margin-left: 0px;
-  margin-top: 5px;
-
-}
-
-.bmi-calculator button {
-  background-color: #333;
-  color: white;
-  padding: 10px 30px; 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px; 
-  font-size: 15px; 
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-.bmi-calculator button:hover {
-  background-color: #444;
-}
-
-.bmi-results-container {
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  width: calc(25% - 40px);
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.bmi-results {
-  font-size: 18px;
 }
