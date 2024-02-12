@@ -102,30 +102,35 @@
     </div>
     <h3>Track Your Progress</h3>
             <p>Sign in to save your favorite exercises and track your progress over time.</p>
- <!--BMI Calculator-->
- <div class="container">
-    <bmi class="bmi-container">
-     <h3>Check you Body Mass Index</h3>
-     <label for="height-feet-input">Height (feet):</label>
-     <input type="number" id="height-feet-input" min="1">
-     <label for="height-inches-input">Height (inches):</label>
-     <input type="number" id="height-inches-input" min="0" max="11">
- </div>
- <div>
-     <label for="weight-pounds-input">Weight (pounds):</label>
-     <input type="number" id="weight-pounds-input" min="1">
- </div>
- <div>
-     <label for="sex-select">Sex:</label>
-     <select id="sex-select">
-         <option value="male">Male</option>
-         <option value="female">Female</option>
-     </select>
- </div>
- <button id="calculate-bmi-button">Calculate BMI</button>
- <div id="bmi-results"></div>
- <div id="bmi-category"></div>
-</bmi>
+ 
+
+<!-- BMI Calculator -->
+<div class="bmi-calculator">
+    <h3>Check your Body Mass Index</h3>
+    <div class="input-container">
+        <div class="height-inputs">
+            <label for="height-feet-input">Height (ft):</label>
+            <input type="number" id="height-feet-input" min="1">
+            <label for="height-inches-input">Height (in):</label>
+            <input type="number" id="height-inches-input" min="0" max="11">
+        </div>
+        <div class="weight-gender-inputs">
+            <label for="weight-pounds-input">Weight (lb):</label>
+            <input type="number" id="weight-pounds-input" min="1">
+            <label for="sex-select">Gender:</label>
+            <select id="sex-select">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+    </div>
+    <button id="calculate-bmi-button">Calculate BMI</button>
+    <div class="bmi-results-container">
+        <div id="bmi-results"></div>
+        <div id="bmi-category"></div>
+    </div>
+</div>
+
 </main>
 
         <!-- modal button -->
@@ -193,6 +198,7 @@
                 }
             }
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="script.js"></script>
 
         <footer>
