@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- link below is to add icons to subscribe form boxes. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Exercise By Body Part</title>
+    <title>Exercise My Body</title>
 </head>
 
 <body>
@@ -162,13 +164,15 @@
                     <h2 class="topAndBottomModalHeader">Subscribe for More Content!</h2>
                 </div>
                 <div class="modal-body">
-                    <label for="First Name">Name:</label>
+                    <label class="modalLabel" for="First Name">Name:</label>
+                    <i class="fa fa-user icon" id="nameStyle"></i>
                     <input type="text" id="fName" placeholder="First Name...">
 
-                    <label for="Email Address">Email: </label>
-                    <input type="text" id="emailAddress" , placeholder="Email...">
+                    <label for="Email Address" class="modalLabel">Email: </label>
+                    <i class="fa fa-envelope icon" id="envelopeStyle"></i>
+                    <input type="text" id="emailAddress" placeholder="Email...">
 
-                    <span class="submit"><button href="https://stackoverflow.com/questions/1438722/thank-you-alert-upon-form-submission">Submit</button></span>
+                    <button class="submit">Submit</button>
 
                 </div>
                 <div class="modal-footer">
