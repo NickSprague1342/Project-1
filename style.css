@@ -1,5 +1,8 @@
 * {
     font-family: 'Bebas Neue', sans-serif;
+    @media screen and (max-width: 600px){
+        
+    }
 }
 
 .navbar {
@@ -54,10 +57,14 @@ a {
     object-position: center;
     display: block;
 }
-
+@media screen and (max-width: 600px){
+    .image img {
+        height: 600px;
+    }
+}
 /* Main Container */
 main.container {
-    background-color:;
+    background-color: #f5f5f5;
     
 }
 /* Workout Options Container */
@@ -114,6 +121,8 @@ h2 {
 .button-container{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* resize for mobile */
 }
 
 /* Exercise Button Styles */
@@ -161,7 +170,6 @@ h2 {
 /* Exercise Card Text */
 .exercise-item p {
     margin-top: 10px;
-    tex;
 }
 
 /* Gif Images inside the grid */
@@ -383,5 +391,6 @@ h2 {
     font-size: 28px;
 }
 
+@media 
 
 
