@@ -1,3 +1,16 @@
+var burgerEl = document.getElementById('burgerEl')
+
+burgerEl.addEventListener('click', function () {
+    var navbarMenu = document.getElementById('navbarMenu')
+    // navbarMenu.style.display = 'block'
+    if (navbarMenu.style.display === 'block') {
+        navbarMenu.style.display = 'none'
+    }
+    else { 
+        navbarMenu.style.display = 'block' 
+    }
+})
+
 // Placeholder for the API key
 const EXERCISE_DB_API_KEY = 'c9de07b8dcmsh74e6f8113b3952cp195de0jsn717baea31d4f';
 let apiRes;
@@ -89,8 +102,8 @@ function displayExercises(exercises) {
 }
 
 // Body Mass Index API Fuction
-$(document).ready(function() {
-    $('#calculate-bmi-button').click(function() {
+$(document).ready(function () {
+    $('#calculate-bmi-button').click(function () {
         var heightFeet = parseInt($('#height-feet-input').val());
         var heightInches = parseInt($('#height-inches-input').val());
         var weightPounds = parseFloat($('#weight-pounds-input').val());
@@ -109,7 +122,7 @@ $(document).ready(function() {
         var bmiCategory = getBmiCategory(bmi);
         $('#bmi-category').html('BMI Category: ' + bmiCategory);
     });
-    $('#arms-button, #legs-button, #back-button, #chest-button').click(function() {
+    $('#arms-button, #legs-button, #back-button, #chest-button').click(function () {
         var muscle = $(this).data('muscle');
         getExercisesByMuscle(muscle, muscle + '-results');
     });
@@ -131,13 +144,13 @@ function getExercisesByMuscle(muscle, containerId) {
         method: 'GET',
         url: 'https://zylalabs.com/api/428/fitness+calculator+api/328/get+body+mass+index?us_ftin_lbs=' + $('#height-feet-input').val() + ',' + $('#height-inches-input').val() + ',' + $('#weight-pounds-input').val() + '&sex=' + sex, // Include sex parameter in the URL
         headers: { 'x-rapidapi-key': '3430|vxEC1gdwhsRpP3Z9AL87eCvxzJY8chtaYMIOWTYX' },
-        success: function(result) {
+        success: function (result) {
             console.log(result); // Log the API response to check data
             $('#bmi-results').html('BMI: ' + result.bmi.toFixed(2));
             var bmiCategory = getBmiCategory(result.bmi);
             $('#bmi-category').html('BMI Category: ' + bmiCategory);
         },
-        error: function(jqXHR) {
+        error: function (jqXHR) {
             console.error('Error: ', jqXHR.responseText);
             $('#bmi-results').html('Error fetching BMI data. Please try again later.');
         }
