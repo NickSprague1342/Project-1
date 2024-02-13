@@ -79,6 +79,22 @@
     <main class="container">
         <div class="grid">
             <section>
+                <section id="upper-arms">
+                    
+                <section id="lower-arms">
+                    
+                <section id="upper-legs">
+                    
+                <section id="lower-legs">   
+                    
+                <section id="chest">
+                    
+                <section id="back">
+                    
+                <section id="shoulders">
+                
+                <section id="bmi">
+                    
                 <div class="section-container">
                     <h3 class="section-text">Featured Body Parts</h3>
                     <p>Discover exercises tailored for different body parts.</p>
@@ -158,6 +174,18 @@
         </div>
 
         <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.button[data-href]');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const sectionId = this.getAttribute('data-href');
+                    const section = document.querySelector(sectionId);
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
             //functionality of modal
             var modal = document.getElementById("myModal");
 

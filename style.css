@@ -49,10 +49,16 @@ a {
 /* Random Image on Page Refresh/Load - Unsplash */
 .image img {
     width: 100%;
-    height: 1000px;
+    height: 1250px;
     object-fit: cover;
     object-position: center;
     display: block;
+}
+
+/* Main Container */
+main.container {
+    background-color:;
+    
 }
 /* Workout Options Container */
 .workout-options {
@@ -93,9 +99,16 @@ h2 {
 .section-container {
     margin-top: 80px;
 }
+
+/* Section Paragraph */
+.section-container p {
+    font-size: 24px;
+    text-align: center;
+}
 /* Section Text */
 .section-text {
     font-size: 48px;
+    text-align: center;
 }
 /* Button Container for Exercises */
 .button-container{
@@ -108,11 +121,13 @@ h2 {
     background-color: lightgray;
     /* Additional styles for hover effect */
 }
+
 /* Exercise List Container */
 #exerciseList.exercises-container {
   display: grid;
     background-color: transparent;
 }
+
 /* Exercise Instruction Text */
 .exercise-text{
   font-size: 42px;
@@ -130,6 +145,7 @@ h2 {
     background-color: #0a0909fc;
     text-align: center;
 }
+
 /* Exercise Card Styles */
 .exercise-item {
     padding: 20px;
@@ -145,6 +161,7 @@ h2 {
 /* Exercise Card Text */
 .exercise-item p {
     margin-top: 10px;
+    tex;
 }
 
 /* Gif Images inside the grid */
@@ -153,7 +170,7 @@ h2 {
     justify-items: center;
     text-align: center;
     height: auto;
-    border: 2px solid #201f1f;
+    border: 4px solid #201f1f;
 }
 
 /* The Modal (background) */
