@@ -67,7 +67,7 @@
     <!--Header-->
     <div class="header-container">
         <header class="header-text">
-            <h1 class="header">Welcome to Exercise my Body<br /> Your personalized fitness companion</h1>
+            <h1 class="header">Welcome to ExercisemyBody<br /> Your personalized fitness companion</h1>
             </div>
         </header>
     </div>
@@ -115,11 +115,14 @@
     </div>
     <!--Exercise Card Container-->
     <div id="exerciseList" class="exercises-container">
-        <h3 class="exercise-text">Exercises</h3>
+        <h3 class="exercise-text"></h3>
         <!-- Fetched exercises will be displayed here -->
     </div>
     <h3>Track Your Progress</h3>
-            <p>Sign in to save your favorite exercises and track your progress over time.</p>
+            <p>Click Subscribe below to sign up and save your favorite exercises, plus track your BMI progress over time!</p>
+        <div id="subscribe" class="subscribe-container">
+            <a class="sub-button" id="myBtn" href="#subscribe">Subscribe</a>
+        </div>
  
 
 <!-- BMI Calculator -->
@@ -150,7 +153,6 @@
 </div>
 
 </main>
-
         <!-- modal button -->
         <!-- <button class="button" id="myBtn">Subscribe for More Content!</button> -->
 
@@ -199,6 +201,7 @@
             var modal = document.getElementById("myModal");
 
             var btn = document.getElementById("myBtn");
+            var btn = document.getElementById("subscribe");
 
             // working on the below variables to cnosole.log email and name inputs from form || DIDNT NEED THEM TO BE VAR'S || JUST USED TO [fName.value] AND [emailAddress.value]
             // var nameLog = document.getElementById("fName").value;
