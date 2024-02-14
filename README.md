@@ -6,20 +6,20 @@ Welcome to Exercise My Body, a fitness app for people of all skill levels to fin
 
 ## Screenshot(s)
 
-Screenshot(s) of applciation to follow.
+Screenshot(s) of application to follow.
 
 
 ## User Story
 
 As a user, I want to:
 
-- Search for strength exercises based on muscle group. 
+- Search for strength exercises based on muscle groups. 
 - Find detailed information about how each exercise can strengthen my body. 
 - View new exercises as short video clips.
 - Calculate my BMI by simply inputting my height, weight, and gender.
 - Locate gyms and personal training services near me.
-- Sign up for to recieve updates on new exercises. 
-- Have a seamelss and user-friendly experience while using the application.
+- Sign up to receive updates on new exercises. 
+- Have a seamless and user-friendly experience while using the application.
 
 ## API(s)
 
