@@ -18,10 +18,19 @@ As a user, I want to:
 - View new exercises as short video clips.
 - Calculate my BMI by simply inputting my height, weight, and gender.
 - Locate gyms and personal training services near me.
-- Sign up for to recieve updates on new exercises. 
 - Have a seamelss and user-friendly experience while using the application.
 
 ## API(s)
 
-This application utilizes the API Ninja API for workout information, Zyla API for BMI calculations, and the Google Maps API for gym/personal training location services. These API's allow us to access a wide range of exercises to target each of the body's major muscle groups, calculate BMI information, and locate gyms near me. 
+This application utilizes the ExerciseDB API for workout information and Zyla API for BMI calculations. These API's allow us to access a wide range of exercises to target each of the body's major muscle groups and calculate BMI information.
+
+## Future Development
+
+- Incorporate the Google Maps API and offer the ability to search for a gym near you easier. 
+- Create user profiles to store and track workout/training sessions.
+
+## Links
+
+- Github Repo: https://github.com/NickSprague1342/Project-1
+- Live Site: https://nicksprague1342.github.io/Project-1/
 
