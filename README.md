@@ -8,6 +8,11 @@ Welcome to Exercise My Body, a fitness app for people of all skill levels to fin
 
 Screenshot(s) of application to follow.
 
+![Screenshot1](<assets/Screenshot 2024-02-14 at 7.07.44 PM.png>)
+![Screenshot2](<assets/Screenshot 2024-02-14 at 7.07.54 PM.png>)
+![Screenshot3](<assets/Screenshot 2024-02-14 at 7.07.59 PM.png>)
+![Screenshot4](<assets/Screenshot 2024-02-14 at 7.08.29 PM.png>)
+![Screenshot5](<assets/Screenshot 2024-02-14 at 7.08.10 PM.png>)
 
 ## User Story
 
